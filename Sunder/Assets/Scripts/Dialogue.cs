@@ -4,9 +4,9 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NPC : MonoBehaviour
+public class Dialogue : MonoBehaviour
 {
-    public GameObject dialoguePanel;
+    public GameObject DialoguePanel;
     public Text dialogueText;
     public string[] dialogue;
     private int index;
@@ -21,13 +21,13 @@ public class NPC : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && PIsClose)
         {
-            if (dialoguePanel.activeInHierarchy)
+            if (DialoguePanel.activeInHierarchy)
             {
                 zeroText();
             }
             else
             {
-                dialoguePanel.SetActive(true);
+                DialoguePanel.SetActive(true);
                 StartCoroutine(Typing());
             }
         }
@@ -38,9 +38,10 @@ public class NPC : MonoBehaviour
     }
     public void zeroText()
     {
+        StopCoroutine("Typing");
         dialogueText.text = "";
         index = 0;
-        dialoguePanel.SetActive(false);
+        DialoguePanel.SetActive(false); 
     }
     IEnumerator Typing()
     {
@@ -50,6 +51,7 @@ public class NPC : MonoBehaviour
             yield return new WaitForSeconds(wordSpeed);
         }
     }
+
     public void nextLine()
     {
         contButton.SetActive(false);
@@ -61,7 +63,7 @@ public class NPC : MonoBehaviour
         }
         else
         {
-            zeroText();
+            zeroText();   
         }
     }
 
