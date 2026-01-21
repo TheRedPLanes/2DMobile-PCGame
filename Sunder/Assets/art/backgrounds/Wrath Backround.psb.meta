@@ -94,18 +94,18 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Backround
+  - name: Wrath Backround_0
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 4
-      width: 2100
-      height: 1500
-    spriteID: 6649bc98a75edd84e8400cb89393f819
+      x: 1
+      y: 1
+      width: 2106
+      height: 1506
+    spriteID: cc084d38ca8984b4dacc0ce174516e01
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -113,7 +113,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 1, y: 1}
     spritePosition: {x: 0, y: 0}
   characterData:
     bones: []
