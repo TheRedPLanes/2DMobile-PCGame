@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -36,9 +37,14 @@ public class PlayerHealth : MonoBehaviour
             GetComponent<SpriteRenderer>().color = new Color(1.0f, 0.0f, 0.0f, 1.0f);
             if (health <= 0f)
             {
+               
                 GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
                 newCanvasGameObject.SetActive(true); //activate a new canvas (whatever you select)
                 Time.timeScale = 0f;                    
+            }
+            if (health <= 0f)
+            {
+                GetComponentInChildren<Animator>().SetTrigger("Death");
             }
             
         }
@@ -121,7 +127,7 @@ public class PlayerHealth : MonoBehaviour
         audioSource = Camera.main.GetComponent<AudioSource>();
         newCanvasGameObject.SetActive(false);
     }
-
+    
     // Update is called once per frame
     void Update()
     {

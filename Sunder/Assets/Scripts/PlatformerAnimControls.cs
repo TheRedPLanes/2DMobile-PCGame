@@ -13,10 +13,11 @@ public class PlatformerAnimControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        GetComponentInChildren<Animator>();
         float moveX = Input.GetAxis("Horizontal");
         float moveY = GetComponent<Rigidbody2D>().velocity.y;
-        GetComponent<Animator>().SetFloat("x", moveX);
-        GetComponent<Animator>().SetFloat("y", moveY);
+        GetComponentInChildren<Animator>().SetFloat("x", moveX);
+        GetComponentInChildren<Animator >().SetFloat("y", moveY);
         if(moveX < 0)
         {
             //we're moving to the left
