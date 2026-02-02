@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lobby (Wrath).unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Lvl1 'Waves of Anger'.unity
+    guid: 6fb46042833a6a94488f12b9b1c0fabd
+  - enabled: 1
+    path: Assets/Scenes/Lvl2 'God Damn the Sun'.unity
+    guid: 9d6099cf100e955499dca561d3b74fc9
+  - enabled: 1
+    path: Assets/Scenes/Lvl3 'Red Rivers Run'.unity
+    guid: 4a97e6ef9e71a7c47b2d585bdf61ad7f
   m_configObjects: {}
