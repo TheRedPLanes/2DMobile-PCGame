@@ -3389,6 +3389,75 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &599816961
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1430596172}
+    m_Modifications:
+    - target: {fileID: -8653719598885068355, guid: 21741fb63eec1064ebfd532b26e0b681, type: 3}
+      propertyPath: m_Name
+      value: WrathfulSoul copy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 21741fb63eec1064ebfd532b26e0b681, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.09651104
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 21741fb63eec1064ebfd532b26e0b681, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.09651549
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 21741fb63eec1064ebfd532b26e0b681, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.16915
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 21741fb63eec1064ebfd532b26e0b681, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 21741fb63eec1064ebfd532b26e0b681, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.77
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 21741fb63eec1064ebfd532b26e0b681, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 21741fb63eec1064ebfd532b26e0b681, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 21741fb63eec1064ebfd532b26e0b681, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 21741fb63eec1064ebfd532b26e0b681, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 21741fb63eec1064ebfd532b26e0b681, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 21741fb63eec1064ebfd532b26e0b681, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 21741fb63eec1064ebfd532b26e0b681, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 21741fb63eec1064ebfd532b26e0b681, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 4843985084834002234, guid: 21741fb63eec1064ebfd532b26e0b681, type: 3}
 --- !u!1001 &616587799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3882,7 +3951,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6e738ee3c2e8624a82d4bcd29cb2542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Lobby (Wrath)
 --- !u!114 &672705510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4569,6 +4637,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &819269443 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -7552582706839291426, guid: 21741fb63eec1064ebfd532b26e0b681, type: 3}
+  m_PrefabInstance: {fileID: 599816961}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &846854897
 GameObject:
   m_ObjectHideFlags: 0
@@ -6219,7 +6292,6 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 128
-  moveActionToUse: {fileID: 0}
 --- !u!50 &1354033294
 Rigidbody2D:
   serializedVersion: 4
@@ -6330,12 +6402,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354033290}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6e738ee3c2e8624a82d4bcd29cb2542, type: 3}
+  m_Script: {fileID: 11500000, guid: d10fdeb17e48ea249b49544ef88966fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: 
+  levelToLoad: Lobby (Wrath)
 --- !u!1 &1355552048
 GameObject:
   m_ObjectHideFlags: 0
@@ -6967,6 +7039,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &1430596172 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 216181786492453283, guid: 7d7adc2a14183e4469ac39462a0335a5, type: 3}
+  m_PrefabInstance: {fileID: 1966925258}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1451700859
 GameObject:
   m_ObjectHideFlags: 0
@@ -14730,13 +14807,20 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2636731939122104304, guid: 7d7adc2a14183e4469ac39462a0335a5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4693705758394500846, guid: 7d7adc2a14183e4469ac39462a0335a5, type: 3}
       propertyPath: m_Name
       value: enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 216181786492453283, guid: 7d7adc2a14183e4469ac39462a0335a5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 819269443}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4693705758394500846, guid: 7d7adc2a14183e4469ac39462a0335a5, type: 3}
       insertIndex: -1
