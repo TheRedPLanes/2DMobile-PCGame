@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -36,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform wallCheck;
     [SerializeField] private LayerMask wallLayer;
+    [SerializeField] private InputActionReference moveActionToUse;
 
     private void Start()
     {
@@ -43,8 +45,11 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
+        
         timer2 += Time.deltaTime;
         horizontal = Input.GetAxisRaw("Horizontal");
+        Vector2 moveInput = moveActionToUse.action.ReadValue<Vector2>();
+        horizontal += moveInput.x;
         if (horizontal == Input.GetAxisRaw("Horizontal"))
         {
             audioSource.PlayOneShot(walkSound);
